@@ -90,8 +90,31 @@ html {
     padding-left: 20px;
 }
 
+.select-term {
+    margin: 10px;
+    padding: 10px;
+    border: 8px solid rgb(172, 181, 196);
+    border-radius: 4px;
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    height: 400px;
+    overflow: hidden;
+}
+
+#term-select {
+    width: 30%;
+}
+
+#term-continue {
+    width: 15%;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>UICRegistration</title>
+    <title>UIC Course Registration</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link href="styles.css" rel="stylesheet" type="text/css"/>
@@ -12,7 +12,7 @@
         <div class="header-left">
                 <img src="images\hamburger_menu_icon.png" height=" 20px;">
                 <img src="images\uic_white_logo.png" height=" 35px;">
-                <p>UIC Registration</p>
+                <p>UIC Course Registration</p>
         </div>
         <div class="header-right">
             <p>University of Illinois at Chicago</p>
@@ -21,15 +21,33 @@
         </div>
     </div>
 
+    <div class="hyperlink-bar">
+        <a href=#>Student</a>
+        <a href=#>Registration</a>
+        <a href="index.html">Select a Term</a>
+    </div>
+
+    <div class="page-title">
+        <p>Select a Term</p>
+    </div>
+
+
     <main>
-        <div class="hyperlink-bar">
-            <a href=#>Student</a>
-            <a href=#>Registration</a>
-            <a href="index.html">Select a Term</a>
+        <div class="select-term">
+            <p>Terms Open for Registration:</p>    
+            <select id="term-select">
+                <option value="spring2025">Spring 2025</option>
+                <option value="fall2024">Fall 2024</option>
+                <option value="summer2024">Summer 2024</option>
+                <option value="spring2024">Spring 2024</option>
+                <option value="fall2023">Fall 2023</option>
+                <option value="summer2023">Summer 2023</option>
+            </select>
+            <br>
+            <br>
+            <button id="term-continue">Continue</button>
         </div>
-        <div class="page-title">
-            <p>Select a Term</p>
-        </div>
+
     </main>
 
     <script src="index.js"></script>
