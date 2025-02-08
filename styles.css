@@ -96,18 +96,21 @@ html {
     border: 8px solid rgb(172, 181, 196);
     border-radius: 4px;
     flex-grow: 1;
-    display:flex;
+    display: flex;
     flex-direction: column;
-    height: 400px;
+    height: 450px;
     overflow: hidden;
 }
 
-#term-select {
-    width: 30%;
+#term-selection {
+    width: 275px;
+    height: 35px;
+    padding: 5px;
 }
 
 #term-continue {
-    width: 15%;
+    width: 100px;
+    cursor: pointer;
 }
 
 body {
