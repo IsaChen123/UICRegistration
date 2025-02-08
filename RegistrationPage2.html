@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<gtml>
-
-<link rel="stylesheet" href="overlayStyles.css">
-<div id="overlay"></div>
-<script src="functs.js"></script>
-
-
 
 <head>
-    <div style="padding:20px">
+    <link rel="stylesheet" href="overlayStyles.css">
+    <script src="functs.js"></script>
+</head>
+
+<body>
+    <div id="overlay" onclick="off()">
+        <div class="popup">
+            <button onclick="off()" style="float: right;"> X </button>
+            <h1> Professor H</h1>
+            <img src="RandomProfessor.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            </p>
+        </div>
+    </div>
+      
+      <div style="padding:20px">
         <h2>Overlay with Text</h2>
         <button onclick="on()">Turn on overlay effect</button>
-    </div>
-    <div id="overlay" onclick="off()">
-        <div id="text">Overlay Text</div>
-    </div>
-</head>
+      </div>
+</body>
+</html>
