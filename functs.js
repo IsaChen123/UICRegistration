@@ -68,6 +68,26 @@ function toggleSummaryPanel() {
     x.style.display = (currentDisplay === "none") ? "inline-block" : "none";
 }
 
-function toggleDropdown(){
+function toggleDisplay(element) {
+    if (window.getComputedStyle(element).display === "flex")
+        element.style.display="none";
+    else
+        element.style.display="flex";
+}
+
+function toggleText(element){
+    if (window.getComputedStyle(element).display === "block")
+        element.style.display="none";
+    else
+        element.style.display="block";
+}
+function toggleDropdown(element){
+    [...element.parentNode.parentNode.parentNode.querySelectorAll(".linked-card")].forEach(e => toggleDisplay(e));
+    [...element.parentNode.parentNode.parentNode.querySelectorAll(".linked-text")].forEach(e => toggleText(e));
     
+    
+    // if (window.getComputedStyle(element.closest().querySelectorAll(".linked-text")).display === "none")
+    //     element.style.display="block";
+    // else
+    //     element.style.display="none";
 }
