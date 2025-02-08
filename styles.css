@@ -36,6 +36,8 @@ html {
     height: 60px;
     box-sizing: border-box;
     overflow: hidden;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 
     display: flex;
     align-items: center;
@@ -115,10 +117,55 @@ html {
     padding-left: 20px;
 }
 
+.select-term {
+    margin: 10px;
+    padding: 10px;
+    border: 8px solid rgb(172, 181, 196);
+    border-radius: 4px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    overflow: hidden;
+}
+
+#term-selection {
+    width: 275px;
+    height: 35px;
+    padding: 5px;
+}
+
+#term-continue {
+    width: 100px;
+    cursor: pointer;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: white;
-    color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri;
+}
+
+
+/* register-for-classes.html ---------- */
+.enter-search-criteria {
+    margin: 10px;
+    padding: 20px;
+    border: 8px solid rgb(172, 181, 196);
+    border-radius: 4px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+}
+
+#enter-search-title-i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
 }
