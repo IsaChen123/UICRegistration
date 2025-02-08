@@ -1,0 +1,15 @@
+#overlay {
+    position: fixed;
+    display: none; /* initially hidden */
+    width: 60%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255, 0.5);
+    z-index: 2; /* stack order, higher number takes higher precedence*/
+    cursor: pointer;
+
+
+}
