@@ -51,4 +51,35 @@ function displayMatchingClasses(){
         fragment.appendChild(div); // Add everything to the fragment
         document.body.appendChild(fragment); // Append all at once
     }
+
 }
+
+function toggleSchedulePanel() {
+    var x = document.getElementById("schedule-panel");
+    var currentDisplay = window.getComputedStyle(x).display;
+
+    x.style.display = (currentDisplay === "none") ? "inline-block" : "none";
+}
+
+function toggleSummaryPanel() {
+    var x = document.getElementById("summary-panel");
+    var currentDisplay = window.getComputedStyle(x).display;
+
+    x.style.display = (currentDisplay === "none") ? "inline-block" : "none";
+}
+
+// function closeSchedulePanel(){
+//     document.getElementById("schedule-panel").style.display = "none";
+    
+// }
+
+// function openSummaryPanel(){
+//     if()
+//     document.getElementById("summary-panel").style.display = "inline-block";
+    
+// }
+
+// function closeSummaryPanel(){
+//     document.getElementById("summary-panel").style.display = "none";
+    
+// }

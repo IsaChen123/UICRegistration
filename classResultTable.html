@@ -1,16 +1,15 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="searchForm.css">
     <link rel="stylesheet" href="classResultTable.css">
     <link rel="stylesheet" href="overlayStyles.css">
     <script src="functs.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <input type="file" id="excelFile" />
-    <pre id="output"></pre>
 
 <body>
     <div class="tab">
-        <button class="tablinks" id="activeTab" style="color:white; background-color: #333333;" onclick="findClasses()">Find Classes</button>
+        <button class="tablinks" id="activeTab" style="color:white; background-color: #333333;"
+            onclick="findClasses()">Find Classes</button>
         <button class="tablinks" onclick="findClasses()">Enter CRNs</button>
         <button class="tablinks" onclick="findClasses()">Plans</button>
         <button class="tablinks" onclick="findClasses()">Schedule and Options</button>
@@ -21,22 +20,9 @@
             <p>Term: Spring 2025 - Chicago</p>
         </div>
         <div style="align-content: right; display: block;">
-            <button type="button" >Search Again</button>
+            <button type="button">Search Again</button>
         </div>
-        <div id="overlay" onclick="off()">
-            <div class="popup">
-                <button onclick="off()" style="float: right;"> X </button>
-                <h1> Professor H</h1>
-                <img src="RandomProfessor.jpg">
-                <p> 
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                </p>
-            </div>
-        </div>
+        
         <!-- <div class="LectureInfo">
             <table>
                 <tr>
@@ -93,7 +79,7 @@
             </table>
         </div> -->
 
-        
+
         <!-- <div>
             <table class="classResultTable">
                 <tr>
@@ -163,11 +149,28 @@
             </table>
 
         </div> -->
-        
-        
 
-    
+
+
+
     </div>
+
+    <div class="footer">
+        <button class="tablinks" id="activeTab" style="color:white; background-color: #333333;"
+            onclick="toggleSchedulePanel()">Schedule</button>
+        <button class="tablinks" onclick="toggleSummaryPanel()">Summary</button>
+        <div class="panels">
+            <div id="schedule-panel">
+                <p>Hello world</p>
+            </div>
+            <div id="summary-panel">
+                <p>Hello world</p>
+            </div>
+        </div>
+        
+    </div>
+    
 </body>
 </head>
+
 </html>
