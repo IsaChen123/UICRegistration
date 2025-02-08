@@ -35,4 +35,67 @@
     <script src="index.js"></script>
 </body>
 
+<link href="searchForm.css" rel="stylesheet" type="text/css"/>
+    <!-- Tab links -->
+<div class="tab">
+    <button class="tablinks" id="activeTab" style="color:white; background-color: #333333;" onclick="findClasses()">Find Classes</button>
+    <button class="tablinks" onclick="findClasses()">Enter CRNs</button>
+    <button class="tablinks" onclick="findClasses()">Plans</button>
+    <button class="tablinks" onclick="findClasses()">Schedule and Options</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="findClasses" class="tabcontent">
+    <p>Enter Your Search Criteria<p>
+    <p>Term: Spring 2025 - Chicago</p>
+    <form onsubmit="subjectSearch()">
+        
+        <table>
+            <tr>
+                <td>
+                    <label for="subject">Subject</label>
+                </td>
+                <td> 
+                    <input type="text" id="subject" name="subject">
+                </td>
+            </tr>
+            <tr>
+                <td> 
+                    <label for="classTitle">Class Title</label>
+                </td>
+                <td> 
+                    <input type="text" id="classTitle" name="classTitle">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="courseNumber">Course Number</label>
+                </td>
+                <td> 
+                    <input type="text" id="courseNumber" name="courseNumber">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="openSectionOnly">Open Section Only</label>
+                </td>
+                <td> 
+                    <input type="checkbox" id="openSectionOnly" name="openSectionOnly">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="instructionalMethods">Instructional Methods</label>
+                </td>
+                <td> 
+                    <input type="text" id="instructionalMethods" name="instructionalMethods">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button style="padding: 10px; border-radius: 10%;" type="submit" value="Search"> Search </button>
+    </form>
+  </div>
+  
+</body>
 </html>
