@@ -1,12 +1,12 @@
 /* Style the tab */
-.tab {
+.tab, .footer {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  .tab button, .footer button {
     background-color: inherit;
     float: left;
     border: none;
@@ -17,7 +17,7 @@
   }
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
+  .tab button:hover, .footer button:hover {
     background-color: #ddd;
   }
   
@@ -34,6 +34,11 @@
     border-top: none;
   }
 
+  .footer{
+    position: fixed;
+    bottom:0;
+    
+  }
 table {
     border-collapse: collapse;
 }

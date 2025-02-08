@@ -23,6 +23,10 @@
     color: white;
 }
 
+.dark-mode .footer {
+    background-color:rgb(102, 102, 102)
+}
+
 html {
     scroll-behavior: smooth;
 }

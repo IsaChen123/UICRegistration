@@ -59,3 +59,21 @@
     font-weight: bold;
     font-size: large;
 }
+
+.footer{
+    width: 100%;
+}
+
+.panels{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    
+}
+#summary-panel, #schedule-panel {
+    margin: 20px;
+    display: none;
+}
+
