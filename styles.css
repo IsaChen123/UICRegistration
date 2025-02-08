@@ -1,3 +1,28 @@
+.dark-mode {
+    background-color: #333333;
+    color: white;
+}
+
+.dark-mode .hyperlink-bar {
+    background-color: #333333;
+    color: white;
+}
+
+.dark-mode .page-title {
+    background-color: #333333;
+    color: white;
+}
+
+.dark-mode .tablinks {
+    background-color: #333333;
+    color: white;
+}
+
+.dark-mode .tab {
+    background-color: #333333;
+    color: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -94,4 +119,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: white;
+    color: black;
 }

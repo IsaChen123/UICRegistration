@@ -1,4 +1,13 @@
-import "index.html";
+// TOGGLE BUTTON
+
+const toggleButton = document.getElementById("darkToggle");
+
+toggleButton.addEventListener("click", () => {
+    // Toggle the dark-mode class on the body element
+    document.body.classList.toggle("dark-mode");
+});
+
+//INTAKE INPUTS FOR SEARCHES
 
 function getInputVal(inputId, propertyName, obj) {
     var input = document.getElementById(inputId).value; // Get the input value by id
