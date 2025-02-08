@@ -11,7 +11,7 @@ if (darkModeSetting === 'enabled') {
 }
 
 const toggleButton = document.getElementById("darkToggle");
-
+console.log(toggleButton, "testing")
 toggleButton.addEventListener("click", () => {
     // Toggle the dark-mode class on the body element
     document.body.classList.toggle("dark-mode");
@@ -28,8 +28,6 @@ if (document.body.classList.contains('dark-mode')) {
 document.getElementById("searchButton").addEventListener("click", function() {
     window.location.href = "classResultTable.html";
 });
-
-
 
 
 
