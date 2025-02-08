@@ -51,3 +51,9 @@ td, th {
     background-color: #333333;
     color: white;
 }
+
+.highlighted-professor {
+  color: #1a0dab;
+  text-decoration: underline;
+  cursor: pointer;
+}
