@@ -41,9 +41,11 @@
 
 html {
     scroll-behavior: smooth;
+    padding-top: 60px;
 }
 
 .navbar {
+    z-index: 10000;
     font-size: 16px;
     font-family: Calibri;
     color: white;
@@ -54,6 +56,10 @@ html {
     overflow: hidden;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     display: flex;
     align-items: center;
@@ -136,7 +142,7 @@ html {
 .select-term {
     margin: 10px;
     padding: 10px;
-    border: 8px solid rgb(172, 181, 196);
+    border: 8px solid #acb5c4;
     border-radius: 4px;
     flex-grow: 1;
     display: flex;
@@ -191,12 +197,15 @@ body {
     justify-content: space-between;
     align-items: center;
     line-height: 7px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .universal-button {
     cursor: pointer;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 7.5px;
     border: 0px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
     font-family: Calibri;
