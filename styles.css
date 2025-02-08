@@ -5,8 +5,32 @@ html {
 .navbar {
     font-size: 16px;
     font-family: Calibri;
+    color: white;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
 
     display: flex;
-    
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 
+    background: #d80434;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
