@@ -15,7 +15,8 @@
                 <p>UIC Course Registration</p>
         </div>
         <div class="header-right">
-            <p>University of Illinois at Chicago</p>
+            <button id="darkToggle"> <img src = "images\bulb.png" alt ="Icon" height="10px" />  </button>
+            <p>University of Illinois Chicago</p>
             <img src="images\settings_icon.png" height=" 25px;">
             <img src="images\profile_photo_icon.png" height=" 30px;" style="filter: invert(100%)">
         </div>
@@ -39,8 +40,58 @@
                 <h4>Enter Your Search Criteria</h4>
                 <img src="images\info-icon.png" height="15px" style="filter: grayscale(65%)">   
             </div>
-            <p>Term: _______</p>
-
+            
+            <!-- Tab content -->
+            <div id="findClasses" class="tabcontent">
+                <p>Term: Spring 2025 - Chicago</p>
+                <form onsubmit="subjectSearch()">
+                    
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="subject">Subject</label>
+                            </td>
+                            <td> 
+                                <input type="text" id="subject" name="subject">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> 
+                                <label for="classTitle">Class Title</label>
+                            </td>
+                            <td> 
+                                <input type="text" id="classTitle" name="classTitle">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="courseNumber">Course Number</label>
+                            </td>
+                            <td> 
+                                <input type="text" id="courseNumber" name="courseNumber">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="openSectionOnly">Open Section Only</label>
+                            </td>
+                            <td> 
+                                <input type="checkbox" id="openSectionOnly" name="openSectionOnly">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="instructionalMethods">Instructional Methods</label>
+                            </td>
+                            <td> 
+                                <input type="text" id="instructionalMethods" name="instructionalMethods">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                </form>
+                <button style="padding: 10px; border-radius: 10%;" type="submit" value="Search"> Search </button>
+            </div>
         </div>
 
     </main>
