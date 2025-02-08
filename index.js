@@ -24,7 +24,7 @@ if (document.body.classList.contains('dark-mode')) {
     localStorage.setItem('darkMode', 'disabled');
 }
 
-// REDIRECT TO PAGE AFTER SEARCH CLICKED
+// // REDIRECT TO PAGE AFTER SEARCH CLICKED
 // document.getElementById("searchButton").addEventListener("click", function() {
 //     window.location.href = "classResultTable.html";
 // });
