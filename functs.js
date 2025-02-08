@@ -68,18 +68,6 @@ function toggleSummaryPanel() {
     x.style.display = (currentDisplay === "none") ? "inline-block" : "none";
 }
 
-// function closeSchedulePanel(){
-//     document.getElementById("schedule-panel").style.display = "none";
+function toggleDropdown(){
     
-// }
-
-// function openSummaryPanel(){
-//     if()
-//     document.getElementById("summary-panel").style.display = "inline-block";
-    
-// }
-
-// function closeSummaryPanel(){
-//     document.getElementById("summary-panel").style.display = "none";
-    
-// }
+}

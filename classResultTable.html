@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="searchForm.css">
     <link rel="stylesheet" href="classResultTable.css">
     <link rel="stylesheet" href="overlayStyles.css">
-    <script src="functs.js"></script>
-
+</head>
 <body>
     <div class="navbar">
         <div class="header-left">
@@ -70,162 +69,165 @@
             </div>
         </div>
 
-        <div class="course-card"> 
-            <div class="title-and-prof">
-                <h3>CS 261 - Machine Organization</h3>
-                <u onclick="on()" style="cursor: pointer; font-weight: bold">Lopez, Fernando</u>
-                <br>
-                <br>
-                <button style="font-family: Calibri; cursor: pointer; padding-left: 10px; padding-right: 10px; background: white; border: 0px; border-radius: 10%;" type="submit" value="Search"> View Linked Sections </button>
+        <div>
+            <div class="course-card"> 
+                <div class="title-and-prof">
+                    <h3>CS 261 - Machine Organization</h3>
+                    <u onclick="on()" style="cursor: pointer; font-weight: bold">Lopez, Fernando</u>
+                    <br>
+                    <br>
+                    <button onclick="toggleDropdown(this)" style="font-family: Calibri; cursor: pointer; padding-left: 10px; padding-right: 10px; background: white; border: 0px; border-radius: 10%;" type="submit" value="Search"> View Linked Sections </button>
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <p>Type: Lecture</p>
+                </div>
+                <div class="time-table">
+                    <p>T, R 01:00 PM - 02:15 PM</p>
+                    <table style="width: fit-content" id="meetingTimes">
+                        <td>S</td>
+                        <td>M</td>
+                        <td id="active">T</td>
+                        <td>W</td>
+                        <td id="active">R</td>
+                        <td>F</td>
+                        <td>S</td>
+                    </table>
+                    <p class="red-text" style="color: #d80434; font-weight: bold;">*Time Conflict!</p>
+                </div>
+                <div class="course-info">
+                    <br>
+                    <p>Credit Hours: 3</p>
+                    <p>Seats Remaining: 12/39</p>
+                </div>
             </div>
-            <div>
-                <br>
-                <br>
-                <p>Type: Lecture</p>
+    
+    
+            
+            <p style="margin-left: 10%">Linked Sections: </p>
+    
+            <div class="linked-card"> 
+                <div class="title-and-prof">
+                    <h3>CS 261 - Machine Organization</h3>
+                    <p style="cursor: pointer; font-weight: bold">Chen, Isabella</u>
+    
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <p>Type: Discussion</p>
+                </div>
+                <div class="time-table">
+                    <p>R 10:00 AM - 10:50 AM</p>
+                    <table style="width: fit-content" id="meetingTimes">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td id="active">R</td>
+                        <td>F</td>
+                        <td>S</td>
+                    </table>
+                </div>
+                <div class="course-info">
+                    <br>
+                    <p>Seats Remaining: 0/39</p>
+                    <p class="red-text" style="color: #d80434; font-weight: bold;">*Capacity reached!</p>
+                </div>
             </div>
-            <div class="time-table">
-                <p>T, R 01:00 PM - 02:15 PM</p>
-                <table style="width: fit-content" id="meetingTimes">
-                    <td>S</td>
-                    <td>M</td>
-                    <td id="active">T</td>
-                    <td>W</td>
-                    <td id="active">R</td>
-                    <td>F</td>
-                    <td>S</td>
-                </table>
-                <p class="red-text" style="color: #d80434; font-weight: bold;">*Time Conflict!</p>
+    
+            <div class="linked-card"> 
+                <div class="title-and-prof">
+                    <h3>CS 261 - Machine Organization</h3>
+                    <p style="cursor: pointer; font-weight: bold">Mehta, Krima</u>
+    
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <p>Type: Discussion</p>
+                </div>
+                <div class="time-table">
+                    <p>R 11:00 AM - 11:50 AM</p>
+                    <table style="width: fit-content" id="meetingTimes">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td id="active">R</td>
+                        <td>F</td>
+                        <td>S</td>
+                    </table>
+                </div>
+                <div class="course-info">
+                    <br>
+                    <p>Seats Remaining: 0/39</p>
+                    <p class="red-text" style="color: #d80434; font-weight: bold;">*Capacity reached!</p>
+                </div>
             </div>
-            <div class="course-info">
-                <br>
-                <p>Credit Hours: 3</p>
-                <p>Seats Remaining: 12/39</p>
+            
+            <div class="linked-card"> 
+                <div class="title-and-prof">
+                    <h3>CS 261 - Machine Organization</h3>
+                    <p style="cursor: pointer; font-weight: bold">Sison, Kayla</u>
+    
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <p>Type: Discussion</p>
+                </div>
+                <div class="time-table">
+                    <p>F 08:00 AM - 08:50 PM</p>
+                    <table style="width: fit-content" id="meetingTimes">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>R</td>
+                        <td id="active">F</td>
+                        <td>S</td>
+                    </table>
+                </div>
+                <div class="course-info">
+                    <br>
+                    <p>Seats Remaining: 2/39</p>
+                    <!-- <p style="color: #d80434; font-weight: bold;">*Capacity reached!</p> -->
+                </div>
+            </div>
+            
+            <div class="linked-card"> 
+                <div class="title-and-prof">
+                    <h3>CS 261 - Machine Organization</h3>
+                    <p style="cursor: pointer; font-weight: bold">Thomas, Dzifa</u>
+    
+                </div>
+                <div>
+                    <br>
+                    <br>
+                    <p>Type: Discussion</p>
+                </div>
+                <div class="time-table">
+                    <p>F 01:00 PM - 01:50 PM</p>
+                    <table style="width: fit-content" id="meetingTimes">
+                        <td>S</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>R</td>
+                        <td id="active">F</td>
+                        <td>S</td>
+                    </table>
+                </div>
+                <div class="course-info">
+                    <br>
+                    <p>Seats Remaining: 1/39</p>
+                    <!-- <p style="color: #d80434; font-weight: bold;">*Capacity reached!</p> -->
+                </div>
             </div>
         </div>
-
-
         
-        <p style="margin-left: 10%" onclick="toggleLinkedSections()">Linked Sections: </p>
-
-        <div class="linked-card"> 
-            <div class="title-and-prof">
-                <h3>CS 261 - Machine Organization</h3>
-                <p style="cursor: pointer; font-weight: bold">Chen, Isabella</u>
-
-            </div>
-            <div>
-                <br>
-                <br>
-                <p>Type: Discussion</p>
-            </div>
-            <div class="time-table">
-                <p>R 10:00 AM - 10:50 AM</p>
-                <table style="width: fit-content" id="meetingTimes">
-                    <td>S</td>
-                    <td>M</td>
-                    <td>T</td>
-                    <td>W</td>
-                    <td id="active">R</td>
-                    <td>F</td>
-                    <td>S</td>
-                </table>
-            </div>
-            <div class="course-info">
-                <br>
-                <p>Seats Remaining: 0/39</p>
-                <p class="red-text" style="color: #d80434; font-weight: bold;">*Capacity reached!</p>
-            </div>
-        </div>
-
-        <div class="linked-card"> 
-            <div class="title-and-prof">
-                <h3>CS 261 - Machine Organization</h3>
-                <p style="cursor: pointer; font-weight: bold">Mehta, Krima</u>
-
-            </div>
-            <div>
-                <br>
-                <br>
-                <p>Type: Discussion</p>
-            </div>
-            <div class="time-table">
-                <p>R 11:00 AM - 11:50 AM</p>
-                <table style="width: fit-content" id="meetingTimes">
-                    <td>S</td>
-                    <td>M</td>
-                    <td>T</td>
-                    <td>W</td>
-                    <td id="active">R</td>
-                    <td>F</td>
-                    <td>S</td>
-                </table>
-            </div>
-            <div class="course-info">
-                <br>
-                <p>Seats Remaining: 0/39</p>
-                <p class="red-text" style="color: #d80434; font-weight: bold;">*Capacity reached!</p>
-            </div>
-        </div>
-        
-        <div class="linked-card"> 
-            <div class="title-and-prof">
-                <h3>CS 261 - Machine Organization</h3>
-                <p style="cursor: pointer; font-weight: bold">Sison, Kayla</u>
-
-            </div>
-            <div>
-                <br>
-                <br>
-                <p>Type: Discussion</p>
-            </div>
-            <div class="time-table">
-                <p>F 08:00 AM - 08:50 PM</p>
-                <table style="width: fit-content" id="meetingTimes">
-                    <td>S</td>
-                    <td>M</td>
-                    <td>T</td>
-                    <td>W</td>
-                    <td>R</td>
-                    <td id="active">F</td>
-                    <td>S</td>
-                </table>
-            </div>
-            <div class="course-info">
-                <br>
-                <p>Seats Remaining: 2/39</p>
-                <!-- <p style="color: #d80434; font-weight: bold;">*Capacity reached!</p> -->
-            </div>
-        </div>
-        
-        <div class="linked-card"> 
-            <div class="title-and-prof">
-                <h3>CS 261 - Machine Organization</h3>
-                <p style="cursor: pointer; font-weight: bold">Thomas, Dzifa</u>
-
-            </div>
-            <div>
-                <br>
-                <br>
-                <p>Type: Discussion</p>
-            </div>
-            <div class="time-table">
-                <p>F 01:00 PM - 01:50 PM</p>
-                <table style="width: fit-content" id="meetingTimes">
-                    <td>S</td>
-                    <td>M</td>
-                    <td>T</td>
-                    <td>W</td>
-                    <td>R</td>
-                    <td id="active">F</td>
-                    <td>S</td>
-                </table>
-            </div>
-            <div class="course-info">
-                <br>
-                <p>Seats Remaining: 1/39</p>
-                <!-- <p style="color: #d80434; font-weight: bold;">*Capacity reached!</p> -->
-            </div>
-        </div>
     <br>
     <br>
     <br>
@@ -253,6 +255,7 @@
         
     </div>
     <script src="index.js"></script>
+    <script src="functs.js"></script>
     
 </body>
 </head>
