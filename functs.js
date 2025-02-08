@@ -60,6 +60,7 @@ function toggleSchedulePanel() {
 
     x.style.display = (currentDisplay === "none") ? "inline-block" : "none";
 }
+toggleSchedulePanel();
 
 function toggleSummaryPanel() {
     var x = document.getElementById("summary-panel");
@@ -67,6 +68,7 @@ function toggleSummaryPanel() {
 
     x.style.display = (currentDisplay === "none") ? "inline-block" : "none";
 }
+toggleSummaryPanel();
 
 // function closeSchedulePanel(){
 //     document.getElementById("schedule-panel").style.display = "none";
