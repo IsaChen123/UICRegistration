@@ -68,18 +68,26 @@ function toggleSummaryPanel() {
     x.style.display = (currentDisplay === "none") ? "inline-block" : "none";
 }
 
-// function closeSchedulePanel(){
-//     document.getElementById("schedule-panel").style.display = "none";
-    
-// }
+function toggleDisplay(element) {
+    if (window.getComputedStyle(element).display === "flex")
+        element.style.display="none";
+    else
+        element.style.display="flex";
+}
 
-// function openSummaryPanel(){
-//     if()
-//     document.getElementById("summary-panel").style.display = "inline-block";
+function toggleText(element){
+    if (window.getComputedStyle(element).display === "block")
+        element.style.display="none";
+    else
+        element.style.display="block";
+}
+function toggleDropdown(element){
+    [...element.parentNode.parentNode.parentNode.querySelectorAll(".linked-card")].forEach(e => toggleDisplay(e));
+    [...element.parentNode.parentNode.parentNode.querySelectorAll(".linked-text")].forEach(e => toggleText(e));
     
-// }
-
-// function closeSummaryPanel(){
-//     document.getElementById("summary-panel").style.display = "none";
     
-// }
+    // if (window.getComputedStyle(element.closest().querySelectorAll(".linked-text")).display === "none")
+    //     element.style.display="block";
+    // else
+    //     element.style.display="none";
+}
