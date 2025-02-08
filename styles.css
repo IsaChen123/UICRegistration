@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    font-size: 16px;
+    font-family: Calibri;
+    color: white;
+    margin: 0;
+    padding-left: 15px;
+    height: 60px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: #d80434;
+    border-bottom: 5px solid rgb(113, 137, 181);
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 18px;
+    background-color: #c40431;
+}
+
+.hyperlink-bar {
+    background-color: #f2f2f2;
+    border-bottom: 1.5px solid rgb(231, 231, 231);
+    font-size: 16px;
+    font-family: Calibri;
+    color: white;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    padding-left: 20px;
+}
+
+.hyperlink-bar a {
+    color: rgb(102, 102, 102);
+    font-size: 20px;
+}
+
+.page-title {
+    background-color: #f2f2f2;
+    border-top: 1.5px solid rgb(255, 255, 255);
+    border-bottom: 1.5px solid rgb(231, 231, 231);
+    font-size: 16px;
+    font-family: Calibri;
+    color: rgb(62, 62, 62);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+    padding-left: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
