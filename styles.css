@@ -142,7 +142,7 @@ html {
 .select-term {
     margin: 10px;
     padding: 10px;
-    border: 8px solid rgb(172, 181, 196);
+    border: 8px solid #acb5c4;
     border-radius: 4px;
     flex-grow: 1;
     display: flex;
