@@ -86,3 +86,34 @@ searchParamsInstance.newCourseNum();
 
 // Call checkButton to handle button click event
 checkButton(searchParamsInstance.openSectionsOnly);
+
+
+// importing the parsing modules needed to parse csv
+const fs = require("fs");
+const { parse } = require("csv-parse");
+
+// create a stream of math180 csv data
+fs.createReadStream("data_math180.csv")
+    // parses the csv file
+    .pipe(parse({ delimiter: "|", from_line: 2 }))
+
+    // reads the csv file data
+    .on("data", function (row) {
+
+    // logs it into the console but will be changed
+    console.log(row);
+    })
+    // reads error while attempting to read it
+    .on("error", function (error) {
+
+    // log the error message
+    console.log(error.message);
+    })
+    
+    // when done reading through the csv file
+    .on("end", function () {
+
+    // write in the console log that the csv file finished being read
+    console.log("finished");
+    });
+
