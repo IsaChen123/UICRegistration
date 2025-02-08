@@ -1,11 +1,35 @@
 // TOGGLE BUTTON
 
+// Check if dark mode preference is stored in localStorage
+const darkModeSetting = localStorage.getItem('darkMode');
+
+// If dark mode preference is stored locally, apply it
+if (darkModeSetting === 'enabled') {
+    document.body.classList.add('dark-mode');
+} else {
+    document.body.classList.remove('dark-mode');
+}
+
 const toggleButton = document.getElementById("darkToggle");
 
 toggleButton.addEventListener("click", () => {
     // Toggle the dark-mode class on the body element
     document.body.classList.toggle("dark-mode");
 });
+
+// Save dark mode preference locally for future use
+if (document.body.classList.contains('dark-mode')) {
+    localStorage.setItem('darkMode', 'enabled');
+} else {
+    localStorage.setItem('darkMode', 'disabled');
+}
+
+// REDIRECT TO PAGE AFTER SEARCH CLICKED
+document.getElementById("searchButton").addEventListener("click", function() {
+    window.location.href = "classResultTable.html";
+});
+
+
 
 //INTAKE INPUTS FOR SEARCHES
 
