@@ -57,11 +57,13 @@ body{
 .prof-all {
     display: flex;
     padding: 20px;
-    gap: 20px;
+    gap: 40px;
 }
 
-.prof-general {
-
+.prof-name-COE {
+    display: flex;
+    gap: 25px;
+    align-items: center;
 }
 
 .prof-info {

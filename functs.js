@@ -83,3 +83,23 @@ function toggleSummaryPanel() {
 //     document.getElementById("summary-panel").style.display = "none";
     
 // }
+
+
+function toggleText(element){
+    if (window.getComputedStyle(element).display === "block")
+        element.style.display="none";
+    else
+        element.style.display="block";
+}
+
+function toggleDisplay(element){
+    if (window.getComputedStyle(element).display === "flex")
+        element.style.display="none";
+    else
+        element.style.display="flex";
+}
+
+function toggleDropdown(element){
+    [...element.parentNode.parentNode.parentNode.querySelectorAll(".linked-card")].forEach(e => toggleDisplay(e));
+    [...element.parentNode.parentNode.parentNode.querySelectorAll(".linked-text")].forEach(e => toggleText(e));
+}
