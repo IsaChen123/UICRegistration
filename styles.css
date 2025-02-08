@@ -173,3 +173,10 @@ body {
     align-items: center;
     gap: 12px;
 }
+
+.top-search-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 7px;
+}

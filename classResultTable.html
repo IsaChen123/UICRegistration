@@ -45,10 +45,18 @@
         <button class="tablinks" onclick="findClasses()">Schedule and Options</button>
     </div>
     <div id="classContainer" class="tabcontent">
-        <div style="display: block;">
-            <p>Search Results - 1234 Classes</p>
-            <p>Term: Spring 2025 - Chicago</p>
+
+        <div class="top-search-content">
+            <div style="display: block;">
+                <p>Search Results - 1234 Classes</p>
+                <p>Term: Spring 2025 - Chicago</p>
+            </div>
+            <a href="register-for-classes.html">
+                <button style="padding: 10px; border-radius: 10%;" type="submit" value="Search"> Search Again </button>
+            </a>
         </div>
+
+
         <div id="overlay" onclick="off()">
             <div class="popup">
                 <button onclick="off()" style="float: right;"> X </button>
@@ -62,9 +70,7 @@
                 </p>
             </div>
         </div>
-        <div style="align-content: right; display: block;">
-            <button type="button">Search Again</button>
-        </div>
+        
         
         <div class="LectureInfo">
             <table>
