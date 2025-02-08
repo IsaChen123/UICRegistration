@@ -27,6 +27,18 @@
     background-color:rgb(102, 102, 102)
 }
 
+.dark-mode .course-card {
+    background-color:  #707070;
+}
+
+.dark-mode .linked-card {
+    background-color:  #707070;
+}
+
+.dark-mode .red-text {
+    background: rgb(207, 207, 207);
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -172,4 +184,20 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 12px;
+}
+
+.top-search-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 7px;
+}
+
+.universal-button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10%;
+    border: 0px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    font-family: Calibri;
 }
