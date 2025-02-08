@@ -9,6 +9,7 @@ html {
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
+    height: 60px;
 
     display: flex;
     align-items: center;
@@ -16,13 +17,24 @@ html {
     justify-content: space-between;
 
     background: #d80434;
+    border-bottom: 5px solid rgb(113, 137, 181);
 }
 
-.header-left{
+.header-left {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 18px;
