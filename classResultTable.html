@@ -11,10 +11,71 @@
         <button class="tablinks" onclick="findClasses()">Schedule and Options</button>
     </div>
     <div class="tabcontent">
-        <p>Search Results - 1234 Classes</p>
-        <p>Term: Spring 2025 - Chicago</p>
-        <button type="button">Search Again</button>
-        <div>
+        <div style="display: block;">
+            <p>Search Results - 1234 Classes</p>
+            <p>Term: Spring 2025 - Chicago</p>
+        </div>
+        <div style="align-content: right; display: block;">
+            <button type="button" >Search Again</button>
+        </div>
+        <div class="LectureInfo">
+            <table>
+                <tr>
+                    <td>
+                        <p id="className">CS 412</p>
+                        <p>Saha, Aadirupa</p>
+                    </td>
+                    <td>
+                        <p>3 hours</p>
+                        <p>Lecture</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p> Time Conflict!</p>
+                        <table style="width: fit-content" id="meetingTimes">
+                            <td>S</td>
+                            <td id="active">M</td>
+                            <td>T</td>
+                            <td id="active">W</td>
+                            <td>T</td>
+                            <td id="active">F</td>
+                            <td>S</td>
+                        </table>
+                        <p style="width:fit-content">02:00 PM - 03:15 PM</p>
+                    </td>
+                    <td>
+                        <p>12/38 seats left</p>                  
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p style="margin-left: 10%">Linked: </p>
+        <div class="Linked">
+            <table>
+                <tr>
+                    <td> 
+                        <p>Assistant, Ta1</p>
+                        <table style="width: fit-content" id="meetingTimes">
+                            <td>S</td>
+                            <td id="active">M</td>
+                            <td>T</td>
+                            <td id="active">W</td>
+                            <td>T</td>
+                            <td id="active">F</td>
+                            <td>S</td>
+                        </table>
+                        <p style="width:fit-content">02:00 PM - 03:15 PM</p>
+                    </td>
+                    <td>
+                        <p>12/38 seats left</p>     
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <!-- <div>
             <table class="classResultTable">
                 <tr>
                     <th>Subject Description</th>
@@ -82,7 +143,7 @@
                 </tr>            
             </table>
 
-        </div>
+        </div> -->
         
 
     

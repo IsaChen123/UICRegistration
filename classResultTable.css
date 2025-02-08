@@ -5,20 +5,20 @@
 
 .classResultTable td, .classResultTable th {
     text-align: center;
-    padding: 8px;
+    /* padding: 8px; */
     border: 1px solid gray;
     min-width: 30px;
 }
 .linkedDiscussions{
     text-align: center;
-    padding: 8px;
+    /* padding: 8px; */
     border: 1px solid gray;
     min-width: 30px;
 }
 
 .linkedDiscussions td, th{
     text-align: center;
-    padding: 8px;
+    /* padding: 8px; */
     border: 1px solid gray;
     min-width: 30px;
     width: fit-content
@@ -42,4 +42,20 @@
 #meetingTimes #active{
     background-color: #333333;
     color: white;
+}
+
+.LectureInfo {
+    border: 1px solid gray;
+    display: block;
+    padding: 20px;
+}
+.Linked{
+    border: 1px solid gray;
+    display: block;
+    padding: 20px;
+    margin-left: 10%;
+}
+#className{
+    font-weight: bold;
+    font-size: large;
 }
