@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="searchForm.css">
+    <link rel="stylesheet" href="classResultTable.css">
+    <link rel="stylesheet" href="overlayStyles.css">
+    <script src="functs.js"></script>
+
+<body>
+    <div class="tab">
+        <button class="tablinks" id="activeTab" style="color:white; background-color: #333333;" onclick="findClasses()">Find Classes</button>
+        <button class="tablinks" onclick="findClasses()">Enter CRNs</button>
+        <button class="tablinks" onclick="findClasses()">Plans</button>
+        <button class="tablinks" onclick="findClasses()">Schedule and Options</button>
+    </div>
+    <div class="tabcontent">
+        <div style="display: block;">
+            <p>Search Results - 1234 Classes</p>
+            <p>Term: Spring 2025 - Chicago</p>
+        </div>
+        <div style="align-content: right; display: block;">
+            <button id="searchAgain">Search Again</button>
+        </div>
+        <div id="overlay" onclick="off()">
+            <div class="popup">
+                <button onclick="off()" style="float: right;"> X </button>
+                <h1> Professor H</h1>
+                <img src="RandomProfessor.jpg">
+                <p> 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <div class="LectureInfo">
+            <table>
+                <tr>
+                    <td>
+                        <p id="className">CS 412</p>
+                        <p onclick="on()" span class ="highlighted-professor">Saha, Aadirupa </p>
+                    </td>
+                    <td>
+                        <p>3 hours</p>
+                        <p>Lecture</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p> Time Conflict!</p>
+                        <table style="width: fit-content" id="meetingTimes">
+                            <td>S</td>
+                            <td id="active">M</td>
+                            <td>T</td>
+                            <td id="active">W</td>
+                            <td>T</td>
+                            <td id="active">F</td>
+                            <td>S</td>
+                        </table>
+                        <p style="width:fit-content">02:00 PM - 03:15 PM</p>
+                    </td>
+                    <td>
+                        <p>12/38 seats left</p>                  
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p style="margin-left: 10%">Linked: </p>
+        <div class="Linked">
+            <table>
+                <tr>
+                    <td> 
+                        <p>Assistant, Ta1</p>
+                        <table style="width: fit-content" id="meetingTimes">
+                            <td>S</td>
+                            <td id="active">M</td>
+                            <td>T</td>
+                            <td id="active">W</td>
+                            <td>T</td>
+                            <td id="active">F</td>
+                            <td>S</td>
+                        </table>
+                        <p style="width:fit-content">02:00 PM - 03:15 PM</p>
+                    </td>
+                    <td>
+                        <p>12/38 seats left</p>     
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        
+        <!-- <div>
+            <table class="classResultTable">
+                <tr>
+                    <th>Subject Description</th>
+                    <th>Course Number</th>
+                    <th>Title</th>
+                    <th>Hours</th>
+                    <th>CRN</th>
+                    <th>Instructional Methods</th>
+                    <th>Instructors</th>
+                    <th>Meeting Times</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>111</td>
+                    <td>Intro to CS</td>
+                    <td>3</td>
+                    <td>123456</td>
+                    <td>Meeting on Campus</td>
+                    <td>Baker, Franke</td>
+                    <td>
+                        <table style="width: fit-content" id="meetingTimes">
+                            <td>S</td>
+                            <td id="active">M</td>
+                            <td>T</td>
+                            <td id="active">W</td>
+                            <td>T</td>
+                            <td id="active">F</td>
+                            <td>S</td>
+                        </table>
+                        <p style="width:fit-content">02:00 PM - 03:15 PM</p>
+                    </td>
+                    <td>12/38</td>
+                </tr>            
+            </table>
+            <table style="float: right" class="linkedDiscussions">
+                <tr>
+                    <th>CRN</th>
+                    <th>Instructional Methods</th>
+                    <th>Instructors</th>
+                    <th>Meeting Times</th>
+                    <th>Status</th>
+                    <th>Add</th>
+                </tr>
+                <tr>
+                    <td>123456</td>
+                    <td>Meeting on Campus</td>
+                    <td>Baker, Franke</td>
+                    <td>
+                        <table style="width: fit-content" id="meetingTimes">
+                            <td>S</td>
+                            <td id="active">M</td>
+                            <td>T</td>
+                            <td id="active">W</td>
+                            <td>T</td>
+                            <td id="active">F</td>
+                            <td>S</td>
+                        </table>
+                        <p style="width:fit-content">02:00 PM - 03:15 PM</p>
+                    </td>
+                    <td>12/38</td>
+                    <td>
+                        <button type="button">Add</button>
+                    </td>
+                </tr>            
+            </table>
+
+        </div> -->
+        
+
+    
+    </div>
+</body>
+</head>
+</html>

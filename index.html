@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UIC Course Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-left">
+                <img src="images\hamburger_menu_icon.png" height=" 20px;">
+                <img src="images\uic_white_logo.png" height=" 35px;">
+                <p>UIC Course Registration</p>
+        </div>
+        <div class="header-right">
+            <button id="darkToggle"> <img src = "images\bulb.png" alt ="Icon" height="10px" />  </button>
+            <p>University of Illinois Chicago</p>
+            <img src="images\settings_icon.png" height=" 25px;">
+            <img src="images\profile_photo_icon.png" height=" 30px;" style="filter: invert(100%)">
+        </div>
+    </div>
+
+    <main>
+        <div class="hyperlink-bar">
+            <a href=#>Student</a>
+            <a href=#>Registration</a>
+            <a href="index.html">Select a Term</a>
+        </div>
+        <div class="page-title">
+            <p>Select a Term</p>
+        </div>
+    </main>
+
+
+    <link href="searchForm.css" rel="stylesheet" type="text/css"/>
+    <!-- Tab links -->
+    <div class="tab">
+        <button class="tablinks" id="activeTab" style="color:white; background-color: #333333;" onclick="findClasses()">Find Classes</button>
+        <button class="tablinks" onclick="findClasses()">Enter CRNs</button>
+        <button class="tablinks" onclick="findClasses()">Plans</button>
+        <button class="tablinks" onclick="findClasses()">Schedule and Options</button>
+    </div>
+  
+    <div class="select-term">
+        <p>Terms Open for Registration:</p>    
+        <select id="term-selection">
+            <option value="spring2025">Spring 2025</option>
+            <option value="fall2024">Fall 2024</option>
+            <option value="summer2024">Summer 2024</option>
+            <option value="spring2024">Spring 2024</option>
+            <option value="fall2023">Fall 2023</option>
+            <option value="summer2023">Summer 2023</option>
+        </select>
+        <br>
+        <br>
+        <a href="register-for-classes.html">
+            <button class="universal-button">Continue</button>
+        </a>
+    </div>
+
+    <!-- <a href="register-for-classes.html">
+        <button style="padding: 10px; border-radius: 10%;" type="submit" value="Search"> Search </button>
+    </a> -->
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
