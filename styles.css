@@ -122,3 +122,29 @@ body {
     flex-direction: column;
     font-family: Calibri;
 }
+
+.select-term {
+    line-height: 2px;
+}
+
+
+/* register-for-classes.html ---------- */
+.enter-search-criteria {
+    margin: 10px;
+    padding: 10px;
+    border: 8px solid rgb(172, 181, 196);
+    border-radius: 4px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    overflow: hidden;
+    line-height: 0px;
+}
+
+#enter-search-title-i {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
