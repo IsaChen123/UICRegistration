@@ -1,0 +1,45 @@
+.classResultTable table, td{
+    width: 100%;
+    table-layout:fixed;
+}
+
+.classResultTable td, .classResultTable th {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid gray;
+    min-width: 30px;
+}
+.linkedDiscussions{
+    text-align: center;
+    padding: 8px;
+    border: 1px solid gray;
+    min-width: 30px;
+}
+
+.linkedDiscussions td, th{
+    text-align: center;
+    padding: 8px;
+    border: 1px solid gray;
+    min-width: 30px;
+    width: fit-content
+}
+
+#meetingTimes{
+    width: 14%;
+    border: 1px solid gray;
+    font-size: 10px;
+}
+
+#meetingTimes td{
+    border: 1px solid gray;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    /* padding: 10px; */
+}
+
+#meetingTimes #active{
+    background-color: #333333;
+    color: white;
+}
