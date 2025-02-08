@@ -4,6 +4,9 @@
     <link rel="stylesheet" href="classResultTable.css">
     <link rel="stylesheet" href="overlayStyles.css">
     <script src="functs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <input type="file" id="excelFile" />
+    <pre id="output"></pre>
 
 <body>
     <div class="tab">
@@ -12,7 +15,7 @@
         <button class="tablinks" onclick="findClasses()">Plans</button>
         <button class="tablinks" onclick="findClasses()">Schedule and Options</button>
     </div>
-    <div class="tabcontent">
+    <div id="classContainer" class="tabcontent">
         <div style="display: block;">
             <p>Search Results - 1234 Classes</p>
             <p>Term: Spring 2025 - Chicago</p>
@@ -34,7 +37,7 @@
                 </p>
             </div>
         </div>
-        <div class="LectureInfo">
+        <!-- <div class="LectureInfo">
             <table>
                 <tr>
                     <td>
@@ -88,7 +91,7 @@
                     </td>
                 </tr>
             </table>
-        </div>
+        </div> -->
 
         
         <!-- <div>
@@ -160,6 +163,7 @@
             </table>
 
         </div> -->
+        
         
 
     
