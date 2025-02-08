@@ -31,6 +31,8 @@ document.getElementById("searchButton").addEventListener("click", function() {
 
 
 
+
+
 //INTAKE INPUTS FOR SEARCHES
 
 function getInputVal(inputId, propertyName, obj) {
